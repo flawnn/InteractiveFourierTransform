@@ -70,10 +70,10 @@ export default function Interactive({
     };
   }, [interactive, sizer]);
 
-  const [fullscreen, setFullscreen] = useState(false);
+  const [fullscreen, setFullscreen] = useState(true);
 
   useEffect(() => {
-    if (!fullscreen) {
+    if (fullscreen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
