@@ -1,16 +1,7 @@
 "use client";
 
-import PropTypes from "prop-types";
 import { useCallback, useEffect, useRef, useState } from "react";
 import "./Interactive.css";
-
-Interactive.propTypes = {
-  fromCurrentDirectory: PropTypes.bool,
-  children: PropTypes.func,
-  aspectRatio: PropTypes.number,
-  allowFullscreen: PropTypes.bool,
-  caption: PropTypes.string,
-};
 
 // dynamically load (from same directory as page) and embed a react applet
 export default function Interactive({
